@@ -3,6 +3,7 @@
 		"config",
 		"database",
 		"auth",
-		"backend"
+		"backend",
+		"test"
 	]
 }

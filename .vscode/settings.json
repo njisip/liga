@@ -5,6 +5,7 @@
 		"auth",
 		"backend",
 		"test",
-		"frontend"
+		"frontend",
+		"landing"
 	]
 }

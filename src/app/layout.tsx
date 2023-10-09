@@ -1,4 +1,5 @@
 import AuthSessionProvider from '@/components/AuthSessionProvider'
+import ThemeProvider from '@/components/ThemeProvider'
 import type { Metadata } from 'next'
 import TrpcProvider from './_trpc/TrpcProvider'
 import './globals.css'
@@ -13,9 +14,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang='en'>
 			<body className={`${bodyTypeface.className} w-full`}>
-				<AuthSessionProvider>
-					<TrpcProvider>{children}</TrpcProvider>
-				</AuthSessionProvider>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange>
+					<AuthSessionProvider>
+						<TrpcProvider>{children}</TrpcProvider>
+					</AuthSessionProvider>
+				</ThemeProvider>
 			</body>
 		</html>
 	)

@@ -14,7 +14,7 @@ export default async function Header() {
 				<span className='flex flex-grow'>
 					<Link
 						href='/'
-						className={`${logoTypeface.className} text-3xl flex items-center gap-2 cursor-pointer select-none`}>
+						className={`${logoTypeface.className} text-secondary text-3xl flex items-center gap-2 cursor-pointer select-none`}>
 						LIGA
 					</Link>
 				</span>

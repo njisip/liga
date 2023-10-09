@@ -1,18 +1,23 @@
+import { logoTypeface } from '@/app/typefaces'
 import SignInButton, { SignOutButton } from '@/components/AuthButtons'
 import { getServerSession } from 'next-auth'
-import Image from 'next/image'
-import logo from '../../public/assets/logo.svg'
+import Link from 'next/link'
 import { authOptions } from '../app/api/auth/[...nextauth]/route'
 
 export default async function Header() {
 	const session = await getServerSession(authOptions)
 
 	return (
-		<nav className='w-full p-2'>
+		<nav className='w-full px-2 py-4'>
 			<section className='mx-auto lg:max-w-7xl flex gap-2 items-center'>
 				{/* Logo */}
-				<Image src={logo} alt='logo' width={0} height={30} />
-				<h3 className='flex-grow'>Liga</h3>
+				<span className='flex flex-grow'>
+					<Link
+						href='/'
+						className={`${logoTypeface.className} text-3xl flex items-center gap-2 cursor-pointer select-none`}>
+						LIGA
+					</Link>
+				</span>
 
 				{/* Auth buttons */}
 				{session ? (

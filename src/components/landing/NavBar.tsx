@@ -2,7 +2,7 @@ import { logoTypeface } from '@/app/typefaces'
 import SignInButton, { SignOutButton } from '@/components/AuthButtons'
 import { getServerSession } from 'next-auth'
 import Link from 'next/link'
-import { authOptions } from '../app/api/auth/[...nextauth]/route'
+import { authOptions } from '../../app/api/auth/[...nextauth]/route'
 
 export default async function Header() {
 	const session = await getServerSession(authOptions)

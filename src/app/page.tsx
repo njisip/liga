@@ -1,4 +1,4 @@
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/landing/NavBar'
 import styles from './Home.module.css'
 
 /** The component for the landing page. */

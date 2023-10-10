@@ -1,5 +1,5 @@
-import AuthSessionProvider from '@/components/AuthSessionProvider'
-import ThemeProvider from '@/components/ThemeProvider'
+import AuthSessionProvider from '@/components/providers/AuthSessionProvider'
+import ThemeProvider from '@/components/providers/ThemeProvider'
 import type { Metadata } from 'next'
 import TrpcProvider from './_trpc/TrpcProvider'
 import './globals.css'

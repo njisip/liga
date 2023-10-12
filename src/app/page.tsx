@@ -1,3 +1,4 @@
+import HeroSection from '@/components/landing/HeroSection'
 import NavBar from '@/components/landing/NavBar'
 import styles from './Home.module.css'
 
@@ -6,6 +7,7 @@ export default async function Home() {
 	return (
 		<ContainerBackground>
 			<NavBar />
+			<HeroSection />
 		</ContainerBackground>
 	)
 }

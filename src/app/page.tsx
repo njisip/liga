@@ -1,3 +1,4 @@
+import FeaturesSection from '@/components/landing/FeaturesSection'
 import Footer from '@/components/landing/Footer'
 import HeroSection from '@/components/landing/HeroSection'
 import NavBar from '@/components/landing/NavBar'
@@ -9,6 +10,7 @@ export default async function Home() {
 		<ContainerBackground>
 			<NavBar />
 			<HeroSection />
+			<FeaturesSection />
 			<Footer />
 		</ContainerBackground>
 	)

@@ -4,7 +4,7 @@ import { getServerSession } from 'next-auth'
 import Link from 'next/link'
 import { authOptions } from '../../app/api/auth/[...nextauth]/route'
 
-export default async function Header() {
+export default async function NavBar() {
 	const session = await getServerSession(authOptions)
 
 	return (

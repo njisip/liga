@@ -1,7 +1,9 @@
 import { logoTypeface } from '@/app/typefaces'
 import SignInButton, { SignOutButton } from '@/components/AuthButtons'
 import { getServerSession } from 'next-auth'
+import Image from 'next/image'
 import Link from 'next/link'
+import logo from '~/assets/logo.svg'
 import { authOptions } from '../../app/api/auth/[...nextauth]/route'
 
 export default async function NavBar() {
@@ -12,10 +14,8 @@ export default async function NavBar() {
 			<section className='mx-auto lg:max-w-7xl flex gap-2 items-center'>
 				{/* Logo */}
 				<span className='flex flex-grow'>
-					<Link
-						href='/'
-						className={`${logoTypeface.className} text-primary text-3xl flex items-center gap-2 cursor-pointer select-none`}>
-						LIGA
+					<Link href='/'>
+						<Image src={logo} alt='logo' className='w-12 md:w-20' />
 					</Link>
 				</span>
 

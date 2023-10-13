@@ -1,6 +1,6 @@
-<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center;">
+<div align="center">
 	<img src=".github/logo.svg" width="128">
-	Create and manage your basketball leagues.
+	<p>Create and manage your basketball leagues.</p>
 </div>
 
 ## Features

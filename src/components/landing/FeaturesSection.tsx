@@ -13,10 +13,11 @@ export default function FeaturesSection() {
 				tournament.
 			</FeatureCard>
 			<FeatureCard title='Teams and Players' icon={<Users className={iconStyle} />}>
-				Add teams and players to your league and manage their records and statistics.
+				Add teams and players to your leagues and manage their records and statistics.
 			</FeatureCard>
 			<FeatureCard title='Schedule' icon={<Calendar className={iconStyle} />}>
-				Manage the schedule of matches/games and their results.
+				Manage the schedule of matches/games including start time, venue, and their
+				results.
 			</FeatureCard>
 			<FeatureCard title='Public Site' icon={<Globe className={iconStyle} />}>
 				Generate a publicly available website allowing your fans to follow what's
@@ -36,7 +37,7 @@ function FeatureCard({
 	children?: ReactNode
 }) {
 	return (
-		<div className='mx-4 md:mx-0 p-6 md:basis-1/4 rounded-md border border-foreground/10 hover:border-foreground/30 transition-colors bg-background shadow-lg'>
+		<div className='mx-4 md:mx-0 p-6 md:basis-1/4 rounded-md border border-foreground/10 transition-colors hover:border-foreground/30 bg-background shadow-lg'>
 			{icon}
 			<h2 className='font-bold text-xl mb-2'>{title}</h2>
 			<p className='text-sm'>{children}</p>

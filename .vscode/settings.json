@@ -4,6 +4,8 @@
 		"database",
 		"auth",
 		"backend",
-		"test"
+		"test",
+		"frontend",
+		"landing"
 	]
 }

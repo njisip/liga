@@ -1,10 +1,9 @@
-import AuthSessionProvider from '@/components/AuthSessionProvider'
+import AuthSessionProvider from '@/components/providers/AuthSessionProvider'
+import ThemeProvider from '@/components/providers/ThemeProvider'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import TrpcProvider from './_trpc/TrpcProvider'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { bodyTypeface } from './typefaces'
 
 export const metadata: Metadata = {
 	title: 'Liga',
@@ -14,10 +13,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
-				<AuthSessionProvider>
-					<TrpcProvider>{children}</TrpcProvider>
-				</AuthSessionProvider>
+			<body className={`${bodyTypeface.className} w-full`}>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange>
+					<AuthSessionProvider>
+						<TrpcProvider>{children}</TrpcProvider>
+					</AuthSessionProvider>
+				</ThemeProvider>
 			</body>
 		</html>
 	)

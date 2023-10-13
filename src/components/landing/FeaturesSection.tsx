@@ -3,26 +3,43 @@ import { ReactNode } from 'react'
 
 const iconStyle = 'mb-2 text-secondary'
 
+const features = [
+	{
+		title: 'League Structure',
+		description:
+			"Manage the structure of your leagues whether it's a round-robin or knockout tournament.",
+		icon: <Ungroup className={iconStyle} />,
+	},
+	{
+		title: 'Teams and Players',
+		description:
+			'Add teams and players to your leagues and manage their records and statistics.',
+		icon: <Users className={iconStyle} />,
+	},
+	{
+		title: 'Schedule',
+		description:
+			'Manage the schedule of matches/games including start time, venue, and their results.',
+		icon: <Calendar className={iconStyle} />,
+	},
+	{
+		title: 'Public Site',
+		description:
+			"Generate a publicly available website allowing your fans to follow what's happening in your leagues.",
+		icon: <Globe className={iconStyle} />,
+	},
+]
+
 export default function FeaturesSection() {
 	return (
 		<section
 			id='features'
 			className='mx-auto lg:max-w-7xl pt-4 sm:px-4 2xl:px-0 flex flex-col md:flex-row gap-2 flex-shrink-0'>
-			<FeatureCard title='League Structure' icon={<Ungroup className={iconStyle} />}>
-				Manage the structure of your leagues whether it's a round-robin or knockout
-				tournament.
-			</FeatureCard>
-			<FeatureCard title='Teams and Players' icon={<Users className={iconStyle} />}>
-				Add teams and players to your leagues and manage their records and statistics.
-			</FeatureCard>
-			<FeatureCard title='Schedule' icon={<Calendar className={iconStyle} />}>
-				Manage the schedule of matches/games including start time, venue, and their
-				results.
-			</FeatureCard>
-			<FeatureCard title='Public Site' icon={<Globe className={iconStyle} />}>
-				Generate a publicly available website allowing your fans to follow what's
-				happening in your leagues.
-			</FeatureCard>
+			{features.map(({ title, description, icon }, index) => (
+				<FeatureCard key={index} title={title} icon={icon}>
+					{description}
+				</FeatureCard>
+			))}
 		</section>
 	)
 }

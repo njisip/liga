@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center;">
+	<img src=".github/logo.svg" width="128">
+	Create and manage your basketball leagues.
+</div>
 
-## Getting Started
+## Features
 
-First, run the development server:
+- **League Structure** - Manage the structure of your leagues whether it's a round-robin or knockout tournament.
+- **Teams and Players** - Add teams and players to your leagues and manage their records and statistics.
+- **Schedule** - Manage the schedule of matches/games including start time, venue, and their results.
+- **Public Site** - Generate a publicly available website allowing your fans to follow what's happening in your leagues.
+
+## Development
+
+Install `node_modules`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install --frozen-lockfile
+```
+
+Create and fill out a `.env` file based on `.env.example`.
+
+Generate prisma client:
+
+```bash
+pnpm prisma generate
+```
+
+Run the development server:
+
+```bash
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

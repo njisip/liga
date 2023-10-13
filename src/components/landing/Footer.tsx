@@ -9,8 +9,6 @@ export default function Footer() {
 				<span className='flex gap-4'>
 					<FooterLink href='/#features'>Features</FooterLink>
 					<FooterLink href='https://github.com/njisip/liga'>Github</FooterLink>
-					<FooterLink href='/terms'>Terms</FooterLink>
-					<FooterLink href='/privacy'>Privacy</FooterLink>
 				</span>
 			</div>
 		</section>

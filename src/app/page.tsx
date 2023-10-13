@@ -5,7 +5,7 @@ import NavBar from '@/components/landing/NavBar'
 import styles from './Home.module.css'
 
 /** The component for the landing page. */
-export default async function Home() {
+export default function Home() {
 	return (
 		<ContainerBackground>
 			<NavBar />

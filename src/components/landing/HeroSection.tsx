@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import heroImage from '~/assets/headerImage.svg'
+import heroImage from '~/assets/heroImage.svg'
 import SignInButton from '../AuthButtons'
 
 export default function HeroSection() {

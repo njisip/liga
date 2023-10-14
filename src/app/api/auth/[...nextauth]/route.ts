@@ -7,6 +7,12 @@ export const authOptions: AuthOptions = {
 	// Use prisma
 	adapter: PrismaAdapter(prisma),
 
+	// Set session strategy
+	session: {
+		strategy: 'jwt',
+		maxAge: 30 * 24 * 60 * 60,
+	},
+
 	// Configure one or more authentication providers
 	providers: [
 		GoogleProvider({

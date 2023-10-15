@@ -1,4 +1,3 @@
-import { logoTypeface } from '@/app/typefaces'
 import SignInButton, { SignOutButton } from '@/components/AuthButtons'
 import { getServerSession } from 'next-auth'
 import Image from 'next/image'

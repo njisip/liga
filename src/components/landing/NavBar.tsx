@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from '~/assets/logo.svg'
 import { authOptions } from '../../app/api/auth/[...nextauth]/route'
+import ThemeToggleButton from '../ThemeToggleButton'
 
 export default async function NavBar() {
 	const session = await getServerSession(authOptions)
@@ -17,6 +18,8 @@ export default async function NavBar() {
 						<Image src={logo} alt='logo' className='w-12 md:w-20' />
 					</Link>
 				</span>
+
+				<ThemeToggleButton />
 
 				{/* Auth buttons */}
 				{session ? (

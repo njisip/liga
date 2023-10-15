@@ -13,6 +13,16 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+   <style>
+      text, #text2, #tspan4 {
+         fill: #222222;
+      }
+      @media (prefers-color-scheme: dark) {
+         text, #text2, #tspan4 {
+           fill: #ffffff;
+         }
+      }
+   </style>
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
@@ -49,14 +59,14 @@
        r="60.920139" />
     <text
        xml:space="preserve"
-       style="font-size:43.7983px;fill:#222222;fill-opacity:1;stroke-width:3.64988"
+       style="font-size:43.7983px;fill-opacity:1;stroke-width:3.64988"
        x="13.610084"
        y="79.767387"
        id="text2"><tspan
          sodipodi:role="line"
          x="13.610084"
          y="79.767387"
-         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-family:Manrope;-inkscape-font-specification:'Manrope Ultra-Bold';fill:#222222;fill-opacity:1;stroke-width:3.64988"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-family:Manrope;-inkscape-font-specification:'Manrope Ultra-Bold';fill-opacity:1;stroke-width:3.64988"
          id="tspan4">LIGA</tspan></text>
   </g>
 </svg>

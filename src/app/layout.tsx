@@ -8,6 +8,9 @@ import { bodyTypeface } from './typefaces'
 export const metadata: Metadata = {
 	title: 'Liga',
 	description: 'Manage your basketball leagues',
+	icons: {
+		icon: [{ url: '/icon.svg' }],
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

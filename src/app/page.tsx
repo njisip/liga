@@ -2,7 +2,6 @@ import FeaturesSection from '@/components/landing/FeaturesSection'
 import Footer from '@/components/landing/Footer'
 import HeroSection from '@/components/landing/HeroSection'
 import NavBar from '@/components/landing/NavBar'
-import styles from './Home.module.css'
 
 /** The component for the landing page. */
 export default function Home() {
@@ -18,9 +17,9 @@ export default function Home() {
 
 function ContainerBackground({ children }: { children: React.ReactNode }) {
 	return (
-		<div className={styles.mainBackground}>
-			<div className={styles.backgroundPattern}>
-				<div className={styles.backgroundMesh}>{children}</div>
+		<div className='min-h-screen bg-background'>
+			<div className='bg-grid-pattern'>
+				<div className='bg-mesh-1'>{children}</div>
 			</div>
 		</div>
 	)
